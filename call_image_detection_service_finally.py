@@ -1,3 +1,8 @@
+
+#This code can generate Figure 1a and 1b.
+#Using the developed model, outline the animal's weight, and further refine the animal's contour manually using Labelme
+
+
 import requests,sys
 import json
 import os
@@ -9,7 +14,7 @@ def file_name_find(file_dir):
         for onefile in files:
             if onefile.endswith('.JPG'):
                 path.append(str(onefile))
-address = "F:/sheep/1101"
+address = "F:/sheep/1101" #Change the file path
 file_name_find(address)
 
 print(path)
